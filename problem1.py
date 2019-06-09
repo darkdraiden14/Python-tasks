@@ -7,7 +7,6 @@ age=int(input("Enter your age:"))
 
 y=datetime.datetime.now()
 
-<<<<<<< HEAD
 if age==95:
     print("Congrats!, You are already 95..")
 
