@@ -1,4 +1,4 @@
-import speech_recognition as sr
+import speechrecognition as sr
 from googlesearch import search
 
 print("Enter Your Choice : ")
