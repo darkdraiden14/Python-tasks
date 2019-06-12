@@ -1,4 +1,4 @@
-import speechrecognition as sr
+import speech_recognition as sr
 from googlesearch import search
 
 print("Enter Your Choice : ")
@@ -16,6 +16,7 @@ if ch==2:
                         pass;
 elif ch==1:
         query=input("Type the Query: ")
+
 else :
         print("Invalid")
         exit
