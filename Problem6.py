@@ -16,5 +16,17 @@ elif choice==2:
     #to Store lines of a file in a list
     for lines in file:
         if lines.strip() !="":
-            print(str(i) +lines.strip())
+            print(str(i)+". "  +lines.strip())
             i+=1
+    file.close()
+
+#With -s option
+elif choice==3:
+    file=open("demofile.txt","r")
+    #to Store lines of a file in a list
+    for lines in file:
+        if lines.strip() !="":
+            print(lines.strip())
+    file.close()
+
+#with -E option:
