@@ -2,6 +2,7 @@
 
 import os
 import shutil
+import gtts
 
 #Creating file in order to store commands
 file=open("ListOfCommand","a")
@@ -15,7 +16,7 @@ if(shutil.which(cmmnd)):
     os.system(cmmnd)
 
 else:
-    print("\nThe Command you have entered Does Not exist")
+    print("The Command you have entered Does Not exist")
 file.close()
 
 
