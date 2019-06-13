@@ -3,3 +3,7 @@ Hi this is just a demo file
 for file handling programs
 
 Just for fun!
+
+Hello World!
+
+Just another addition to this file
