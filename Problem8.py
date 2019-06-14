@@ -3,6 +3,7 @@
 import os
 import shutil
 import gtts
+from gtts import gTTS
 
 #Creating file in order to store commands
 file=open("ListOfCommand","a")
@@ -16,7 +17,13 @@ if(shutil.which(cmmnd)):
     os.system(cmmnd)
 
 else:
-    print("The Command you have entered Does Not exist")
+    #TO give voice output
+    msg="The Command you have entered Does Not exist"
+    language="en"
+    error= gTTS(text=msg,lang=language,slow=False)
+    error.save("error.mp3")
+    os.system("vlc error.mp3")
+
 file.close()
 
 
