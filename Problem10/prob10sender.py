@@ -14,22 +14,16 @@ choice=raw_input("Enter Choice: 1)TWO WAY 2)ONE WAY")
 if choice == "1":
     #format : s.sendto(message,((recv_ip,recv_port))
     while 4>3:
-        msg=raw_input("Enter you message:")
+        msg=raw_input("Enter you message and 'Y' if you are Done:")
         s.sendto(msg,(recv_ip,recv_port))
         print(s.recvfrom(50))
-
-        rspns=raw_input("Wanna Quit: Y?N")
-        if rspns=="Y":
-            s.sendto('Q',(recv_ip,recv_port))
+        print(msg)
 
 elif choice == "2":
       while 4>3:
-          msg=raw_input("Enter you message:")
-          s.sendto(msg,(recv_ip,recv_port))
-          rspns=raw_input("Wanna Quit: Y?N")
-          if rspns=="Y":
-              s.sendto('Q',(recv_ip,recv_port))
-           
+          msg=raw_input("Enter you message or Press 'Y' if wanna Quit:")
+          s.sendto(msg,(recv_ip,recv_port))   
+          
 else:
     print("enter valid choice:")
 

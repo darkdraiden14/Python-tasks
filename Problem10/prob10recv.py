@@ -15,8 +15,8 @@ choice = raw_input("Enter your Choice : 1.TWO way 2)ONE way")
 if choice=="1": 
     while 4>3:
         data=s.recvfrom(120)
-        if data =="Q":
-            exit()
+        if data[0] =="Y":
+            break
         print("message from sender: ",data[0])
         print("Sender IP + Port --socket:",data[1])
         # reply to sender
@@ -26,8 +26,8 @@ if choice=="1":
 elif choice == "2":
     while 4>3:
         data=s.recvfrom(120)
-        if data =="Q":
-            exit()
+        if data[0] =="Y":
+            break
         print("message from sender: ",data[0])
         print("Sender IP + Port --socket:",data[1])
     
