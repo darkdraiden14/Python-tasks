@@ -13,5 +13,5 @@ if age==95:
 elif age >95:
     print(f"You have already crossed the age 95 in year :{((95-age)+y.year)}")
 
-else:
+elif age<95 and age >0:
     print(f'Your age will 95 in year {((95-age)+y.year)}')
