@@ -1,17 +1,19 @@
 #!/bin/python3
+
 import os
 import crypt
-username=input("Enter your Username : ")
-flag=0
-num=[0,1,2,3,4,5,6,7,8,9]
-for i in username:
-	if i in str(num):
-		flag=1
-if(flag==1):
-	print("Invalid User Name")
+
+uname=input("Enter your Username : ")
+check=0
+n=[0,1,2,3,4,5,6,7,8,9]
+for i in uname:
+	if i in str(n):
+		check=1
+if(check==1):
+	print("Invalid User Name (Please don't use numbers")
 else:
-	password="hello"+username
-	encPass = crypt.crypt(password,"22") #Encrypting Password
-	os.system("useradd -p " + encPass +" "+username)
-	print("User Added!")
+	psswd="hello"+uname
+	encPsswd = crypt.crypt(psswd,"22") 
+	os.system("useradd -p " + encPsswd +" "+uname)
+	print("You have Successfully added one User")
 
